@@ -1,79 +1,92 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>CSS position</title>
-        <style>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS position</title>
+    <style>
         body {
             font-family: fantasy;
-            color: rgb(199, 177, 14);
-            text-align: center   
+            text-align: center
         }
-        
+
         #landscape {
             width: 280px;
-            position:absolute;
-            top:50px;
+            position: absolute;
+            top: 50px;
             left: 310px;
-            z-index:1;
+            z-index: 1;
         }
 
         h1 {
-            background: rgb(102, 151, 28);
+            background:rgb(147, 173, 107);
             margin: auto;
             align-content: center;
-            }
+            margin-left: 20%;
+            margin-right: 20%;
+        }
 
-            #borovic{
-               position:absolute;
-                top:195px;
-                left:430px;
-                z-index:3; 
-                width:20px;
-            }
+        #borovic {
+            position: absolute;
+            top: 195px;
+            left: 430px;
+            z-index: 3;
+            width: 20px;
+        }
 
-            #girls{
-                position:absolute;
-                top:100px;
-                left:350px;
-                z-index:2; 
-                width:200px;
-            }
+        #girls {
+            position: absolute;
+            top: 100px;
+            left: 350px;
+            z-index: 2;
+            width: 200px;
+        }
 
-            #song{
-                position: relative;
-                top: 220px;
-            }
-            }
-        </style>
-    </head>
-    <body>
+        #song {
+            position: relative;
+            top: 220px;
+            margin-left: 20%;
+            margin-right: 20%;
+            font-family: serif;
+            text-align: left;
+        }
 
-    <h1>Marie's WEB Development Quest</h1>
+        /*one task for different components*/
+        h1,
+        #song {
+            color: rgb(79, 100, 37);
+        }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="color: white">Marie's WEB Development Quest</h1>
 
     <img src="https://bankoboev.ru/storage/fon/bankoboev.ru-6458.jpg" id="landscape">
     <img src="http://img.lenagold.ru/d/deva/deva117.png" id="girls">
     <img src="http://verlauf-ekb.ru/dir_images/watermark/catalog_file_1052_l.png" id="borovic">
-    
-    <div id="song">
-    <h3>Jamming to "Fields of Gold" by Sting</h3>
-    <p>You'll remember me when the west wind moves<br>
-Upon the fields of barley<br>
-You'll forget the sun in his jealous sky<br>
-As we walk in fields of gold
-    </p>
-    
-    <p>So she took her love<br>
-For to gaze awhile<br>
-Upon the fields of barley<br>
-In his arms she fell as her hair came down<br>
-Among the fields of gold</p>
 
-    <p>Will you stay with me, will you be my love<br>
-Among the fields of barley<br>
-We'll forget the sun in his jealous sky<br>
-As we lie in fields of gold</p>
+    <div id="song">
+        <h3>September 3, 2019</h3>
+        <p>
+            What do you think about our big family dinner?
+            Your mum said that it is not good for everybody if we cook only healthy food.
+        </p>
+
+        <!--background for only one paragraph-->
+        <p style="background:rgb(147, 173, 107); color:white">
+            Because the other people want to eat cakes and salads with mayonnaise and we  should not to decide instead
+            of them.
+        </p>
+
+        <p>
+            So, I think, we should cook not only healthy food, so that everyone will be happy.
+            By the way, when do you invited my parent for the dinner?
+        </p>
     </div>
-    
-    </body>
+
+</body>
+
 </html>
