@@ -1,91 +1,166 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>CSS position</title>
-    <style>
-        body {
-            font-family: fantasy;
-            text-align: center
-        }
-
-        #landscape {
-            width: 280px;
-            position: absolute;
-            top: 50px;
-            left: 310px;
-            z-index: 1;
-        }
-
-        h1 {
-            background: rgb(141, 161, 122);
-            margin: auto;
-            align-content: center;
-            color: white;
-        }
-
-        #borovic {
-            position: absolute;
-            top: 195px;
-            left: 430px;
-            z-index: 3;
-            width: 20px;
-        }
-
-        #girls {
-            position: absolute;
-            top: 100px;
-            left: 350px;
-            z-index: 2;
-            width: 200px;
-        }
-
-        #song {
-            position: relative;
-            top: 220px;
-            margin-left: 20%;
-            margin-right: 20%;
-            font-family: serif;
-            text-align: left;
-        }
-
-        /*one task for different components*/
-        h1,
-        #song {
-            color: rgb(79, 100, 37);
-        }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
 </head>
-
 <body>
-
-    <h1>Marie's WEB Development Quest</h1>
-
-    <img src="https://bankoboev.ru/storage/fon/bankoboev.ru-6458.jpg" id="landscape">
-    <img src="http://img.lenagold.ru/d/deva/deva117.png" id="girls">
-    <img src="http://verlauf-ekb.ru/dir_images/watermark/catalog_file_1052_l.png" id="borovic">
-
-    <div id="song">
-        <h3>September 3, 2019</h3>
-        <p>
-            What do you think about our big family dinner?
-            Your mum said that it is not good for everybody if we cook only healthy food.
-        </p>
-
-        <!--background for only one paragraph-->
-        <p style="background:rgb(203, 228, 165);">
-            Because the other people want to eat cakes and salads with mayonnaise and we  should not to decide instead
-            of them.
-        </p>
-
-        <p>
-            So, I think, we should cook not only healthy food, so that everyone will be happy.
-            By the way, when do you invited my parent for the dinner?
-        </p>
-    </div>
-
+    <section class="first">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Healthy eating</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#t1">Десерты</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#t2">Мясо</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#t3">Гарниры</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#t4">Другое</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+          <h1 class="container first_name">Кулинарный блог о здоровом питании</h1>
+          <p class="container first_descr">Научитесь готовить любимые блюда без вреда для здоровья и фигуры! Зачем насиловать своей организм, сидя на диетах, если можно в корне изменить себя, свое питание, начать чувствовать себя лучше и здоровее, иметь сияющий цвет лица, стройную фигуру, забыть про лишние килограммы и при этом совершенно не страдать, радуя себя разнообразными и вкусными блюдами каждый день?</p>  
+        </section>
+        <section class="deserts">
+            <button type="button" class="deserts_name btn btn-outline-dark" id="t1">Десерты</button>
+            <div class="des_recept card mb-3" style="max-width: 90%;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="icons/dec/1.jpg" class="card-img" alt="cheese">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">ГЛАЗИРОВАННЫЕ ПП СЫРКИ С АРАХИСОВОЙ ПАСТОЙ</h5>
+                      <p class="card-text">Ингредиенты (на 3 сырка):<br><br>
+                        Творог 0% - 180гр<br>
+                        Арахисовая паста-25гр<br>
+                        Шоколад горький - 60гр<br>
+                        Подсластитель<br><br><br>
+                        Приготовление:<br><br>
+                        1️. Шоколад растапливаем в микроволновке или на водяной бане.<br>
+                        2️. Формочки смазываем шоколадом и отправляем в морозилку на 10 минут.<br>
+                        3️. В творог добавляем подсластитель и хорошо перемешиваем.<br>
+                        4️. Достаём формочки и заполняем их: творог➡арахисовая паста (1ч.л)➡творог➡шоколад.<br>
+                        5️. Снова отправляем в морозилку на 10 минут.
+                        </p>
+                      <p class="card-text"><small class="text-muted">КБЖУ на 1 сырок: 208/14/11/8</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="des_recept card mb-3" style="max-width: 90%;">
+                <div class="row no-gutters">
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">КЛУБНИЧНЫЙ ЧИЗКЕЙК</h5>
+                      <p class="card-text">Ингредиенты:<br><br>
+                        Для основы:<br>
+                        перемолотые овсяные хлопья - 30 гр<br>
+                        1 яйцо<br>
+                        молоко 40 мл<br>
+                        разрыхлитель 1 ч.л<br>
+                        подсластитель по вкусу<br><br>
+                        Творожный слой:<br>
+                        2 яйца<br>
+                        Ricotta Light - 250 гр<br>
+                        мягкий обезжиренный творог 200 гр<br>
+                        подсластитель по вкусу<br>
+                        ванилин<br><br>
+                        Клубничный слой:<br>
+                        клубника 300 гр<br>
+                        желатин 10 гр<br>
+                        вода для желатина 150 мл<br>
+                        подсластитель по вкусу
+                         </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="icons/dec/2.jpg" class="card-img" alt="cheesecake">
+                  </div>
+                </div>
+                <div class="disert_cook row no-gutters">
+                    <div class="col-md-12">
+                        <p>Приготовление:<br><br>
+                            1. Готовим основу: Все ингредиенты перемешать, взбить до однородной массы и выложить в силиконовую форму ( у меня 18 см в диаметре ), выпекать 10 минут при 180°.<br>
+                            2. Готовим творожный слой: Все ингредиенты для творожного слоя смешиваем до однородности и выкладываем на готовую основу. Выпекать +/- 1 час! По готовности творожная масса должна подрумянится. Следите за своей духовкой. По готовности, оставить в духовке и дать остыть минут на 15-20.<br>
+                            3. Для клубничного слоя: Желатин развести в воде, подгореть до полного растворения, без кипячения!
+                            ⠀Часть клубники измолоть в блендере до состояния каши, вторую часть мелко нарезать. Добавить в клубнику сахзам и соединить все вместе с разведённым желатином. Слегка перемешать и вылить на готовый, остывший творожный слой.
+                            ⠀Убрать в холодильник для застывания на пару часов, лучше на ночь.</p>
+              </div> <p class="card-text"><small class="text-muted">КБЖУ на 100 гр: 92/8/4/6</small></p>
+            </div>
+            
+        </div>
+        <div class="des_recept card mb-3" style="max-width: 90%;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="icons/dec/3.jpg" class="card-img" alt="cooki">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">ПЕЧЕНЬЕ С АРАХИСОВОЙ ПАСТОЙ</h5>
+                <p class="card-text">Ингредиенты:<br><br>
+                  геркулес, 100 гр<br>
+                  овсяная мука, 50 гр<br>
+                  арахисовая паста, 40 гр<br>
+                  молоко 1,5%, 100 мл<br>
+                  разрыхлитель, 1 ч.л.<br>
+                  изюм, 35 гр<br>
+                  сахзам, 3 шт<br><br><br>
+                  Приготовление:<br><br>
+                  1. Первым делом смешиваем геркулес, муку, молоко и сахзам.⠀<br>
+                  2. Затем добавляем в нашу смесь разрыхлитель, изюм и арахисовую пасту. Хорошенько перемешиваем.<br>⠀
+                  3. Теперь убираем тесто на полчаса в холодильник – это нужно для того, чтобы легче было формировать печеньки.⠀<br>
+                  4. Через полчаса приступаем к процессу – можно сделать из теста небольшие шарики, а затем приплюснуть их руками или молоточком для мяса.⠀<br>
+                  5. Ставим в духовку на 25 минут при 180 градусов до характерного золотистого цвета.<br>
+                  </p>
+                <p class="card-text"><small class="text-muted">КБЖУ на 100 гр: 273/9/9/41</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+    <section class="meat">
+    <button type="button" class="meat_name btn btn-outline-dark" id="t2">Мясо</button>
+    <div class="des_recept card mb-3" style="max-width: 90%;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="icons/meat/1.jpg" class="card-img" alt="chiken">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">КУРИНЫЕ НАГГЕТСЫ</h5>
+            <p class="card-text">Ингредиенты:<br><br>
+              2 куриных филе (440 гр)<br>
+              100 гр кукурузных хлопьев без сахара<br>
+              1 яйцо<br>
+              соль, сушеный чеснок и копченая паприка по вкусу<br><br><br>
+              Приготовление:<br><br>
+              1. Филе моем, промокаем бумажным полотенцем и нарезаем на небольшие кусочки.<br>
+              2. Кукурузные хлопья перемалываем в блендере, до состояния крошки, не в муку.<br>
+              3. К перемолотым хлопьям добавляем соль, чеснок и паприку.<br>
+              4. В отдельную миску разбиваем яйцо.<br>
+              5. Каждый куриный кусочек обмакиваем в яйце, затем в панировке. Выкладываем на противень застеленный пергаментом.<br>
+              6. Запекаем в разогретой духовке 25-30 минут при 180°.<br><br>
+              </p>
+            <p class="card-text"><small class="text-muted">КБЖУ на 100 гр: 146/22/4/5</small></p>
+          </div>
+        </div>
+      </div>
+  </section>
 </body>
-
 </html>

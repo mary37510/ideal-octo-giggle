@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS position</title>
+    <style>
+        body {
+            font-family: fantasy;
+            text-align: center
+        }
+
+        #landscape {
+            width: 280px;
+            position: absolute;
+            top: 50px;
+            left: 310px;
+            z-index: 1;
+        }
+
+        h1 {
+            background: rgb(141, 161, 122);
+            margin: auto;
+            align-content: center;
+            color: white;
+        }
+
+        #borovic {
+            position: absolute;
+            top: 195px;
+            left: 430px;
+            z-index: 3;
+            width: 20px;
+        }
+
+        #girls {
+            position: absolute;
+            top: 100px;
+            left: 350px;
+            z-index: 2;
+            width: 200px;
+        }
+
+        #song {
+            position: relative;
+            top: 220px;
+            margin-left: 20%;
+            margin-right: 20%;
+            font-family: serif;
+            text-align: left;
+        }
+
+        /*one task for different components*/
+        h1,
+        #song {
+            color: rgb(79, 100, 37);
+        }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Marie's WEB Development Quest</h1>
+
+    <img src="https://bankoboev.ru/storage/fon/bankoboev.ru-6458.jpg" id="landscape">
+    <img src="http://img.lenagold.ru/d/deva/deva117.png" id="girls">
+    <img src="http://verlauf-ekb.ru/dir_images/watermark/catalog_file_1052_l.png" id="borovic">
+
+    <div id="song">
+        <h3>September 3, 2019</h3>
+        <p>
+            What do you think about our big family dinner?
+            Your mum said that it is not good for everybody if we cook only healthy food.
+        </p>
+
+        <!--background for only one paragraph-->
+        <p style="background:rgb(203, 228, 165);">
+            Because the other people want to eat cakes and salads with mayonnaise and we  should not to decide instead
+            of them.
+        </p>
+
+        <p>
+            So, I think, we should cook not only healthy food, so that everyone will be happy.
+            By the way, when do you invited my parent for the dinner?
+        </p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+* {
+    font-family: 'Comfortaa', cursive;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.first {
+    min-height: 800px;
+    background: url(https://www.canva.com/ru_ru/obuchenie/wp-content/uploads/sites/19/2019/06/aroma-background-bright-910329.jpg) center center/cover no-repeat;
+}
+
+h1 {
+    color: #707070;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 150px;
+}
+
+.first .first_descr {
+    color: #707070;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 90px;
+    margin-left: 58%;
+    width: 30%;
+}
+
+.deserts .deserts_name,
+.meat .meat_name {
+    display: block;
+    margin: 30px auto;
+}
+
+.deserts .des_recept,
+.meat .meat_recept {
+    position: relative;
+    margin: 0 auto;
+}
+
+.card-img {
+    padding: 18px 10px;
+}
+
+.disert_cook {
+    padding: 20px;
+}
